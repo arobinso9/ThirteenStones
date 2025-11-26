@@ -1,0 +1,4 @@
+<resources>
+    <!-- Larger FAB margin for wider screens (same as landscape) -->
+    <dimen name="fab_margin">48dp</dimen>
+</resources>

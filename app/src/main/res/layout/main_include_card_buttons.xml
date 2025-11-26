@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_buttons"
+    style="@style/Widget.Material3.CardView.Outlined"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_activity_margin"
+    android:alpha=".8"
+    android:layout_marginBottom="?attr/actionBarSize"
+    app:layout_constraintBottom_toTopOf="@id/bottom_spacer"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:strokeColor="?attr/colorSecondary"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/button_one"
+            style="@style/BorderlessButton13Stones"
+            android:onClick="pick123"
+            android:text="@string/one" />
+
+        <Button
+            android:id="@+id/button_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pick123"
+            style="@style/BorderlessButton13Stones"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/button_three"
+            android:layout_width="wrap_content"
+            style="@style/BorderlessButton13Stones"
+            android:layout_height="wrap_content"
+            android:onClick="pick123"
+            android:text="@string/three" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
